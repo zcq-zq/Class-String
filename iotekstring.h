@@ -9,7 +9,9 @@ namespace iotek
 		String(const char * = NULL);
 		~String();
 		String(const String&);
+		//String a;a=b;
 		String& operator=(const String &);
+		//string a;a="hello";
 		String& operator=(const char*);
 		inline const char* data()const
 		{
