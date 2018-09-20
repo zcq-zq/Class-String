@@ -13,6 +13,13 @@ namespace iotek
 		String& operator=(const String &);
 		//string a;a="hello";
 		String& operator=(const char*);
+		
+		String& operator+=(const String&);
+		String operator+(const String&) const;
+
+		String& operator+=(const char*);
+		String operator+(const char*) const;
+		
 		inline const char* data()const
 		{
 			return m_data;
